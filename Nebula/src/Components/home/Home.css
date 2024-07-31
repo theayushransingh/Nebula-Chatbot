@@ -1,0 +1,82 @@
+.HomeComponent {
+    background: #F7F7F7;
+    height: calc(100% - 4rem);
+    display: flex;
+    overflow-x: hidden;
+}
+
+.Container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.leftSection {
+    width: 50%;
+    height: 100%;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+span {
+    color: #27d7f2
+}
+
+.para {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    width: 90%;
+}
+
+
+.Heading {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 8rem;
+
+}
+
+.RightSection {
+    height: 100%;
+    width: 50%;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.RightSection img {
+    height: 500px;
+    width: auto;
+    padding-right: 8rem;
+
+}
+
+
+.leftSection .homebtn {
+    border: 2px solid #27d7f2;
+    padding: 8px 20px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    margin-left: 17rem;
+    cursor: pointer;
+    transition: 0.3s linear;
+    font-weight: 500;
+}
+
+.leftSection img {
+    height: 155px;
+    position: absolute;
+    left: -8px;
+    top: 113px;
+}
+
+.leftSection .homebtn:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #26DDF9;
+
+}

@@ -1,0 +1,88 @@
+.contact {
+    width: 100%;
+    height: calc(100% - 4rem);
+    background-color: #F7F7F7;
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container h1 {
+    font-size: 3.4rem;
+    font-weight: 500;
+
+}
+
+
+.cards {
+    height: 240px;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: -70px;
+}
+
+.card {
+    height: 100%;
+    background-color: #eaeaea;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px #9f9c9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.card h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cardHeading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    /* padding-top: 50px; */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #16d6f3;
+}
+
+.cardinfo {
+    text-align: center;
+    /* padding-top: 25px; */
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.link a {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.mails p {
+    padding: 5px;
+}
+
+.container .heading {
+    padding-bottom: 30px;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    font-weight: 600;
+}

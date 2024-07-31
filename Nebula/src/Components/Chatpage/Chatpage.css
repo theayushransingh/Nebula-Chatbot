@@ -1,0 +1,275 @@
+.Chatpage {
+    height: 100%;
+    display: flex;
+}
+
+.Asidemenu {
+
+    background-color: #f0f4f9;
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #000;
+    padding: 20px 10px;
+}
+
+aside i {
+    font-size: 18px;
+}
+
+.Asidemenu .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Asidemenu .newchat {
+    margin-top: 45px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    color: rgb(72, 71, 71);
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.Asidemenu .newchat:hover {
+    background: #e2e6eb
+}
+
+.Asidemenu .recent {
+    display: flex;
+    flex-direction: column;
+}
+
+.Asidemenu .recentTitle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Asidemenu .recentEntry {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.Asidemenu .newchat p {
+    font-size: 16px;
+}
+
+.Asidemenu .recentEntry:hover {
+    background-color: #e2e6eb;
+    /* color: white; */
+}
+
+
+.Main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.Main .logoSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #585858;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+.Main>.logoSection img {
+    width: 35px;
+}
+
+
+.mainContainer {
+    max-width: 900px;
+    margin: auto;
+}
+
+.Main .greet {
+    margin: 20px 0px;
+    font-size: 60px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+
+
+.username {
+    background: -webkit-linear-gradient(18deg, #60c8e5, #531fb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.chat-cards .chat-card {
+    height: 200px;
+    background-color: #f0f4f9;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.chat-cards .chat-card i {
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.chat-cards .chat-card p {
+    color: #585858;
+    font-size: 17px;
+}
+
+.chat-cards .chat-card:hover {
+    background-color: #dfe4ea;
+}
+
+.chatButton {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+
+}
+
+.SearchBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+
+.SearchBox i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.SearchBox input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+
+.result {
+    padding: 0px;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.resultTitle p {
+    /* color: #000; */
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.resultTitle {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.resultTitle img {
+    width: 35px;
+}
+
+.resultdata {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.loadingImg {
+    width: 40px;
+    opacity: 0.8;
+    animation: loadingImg 0.9s infinite linear;
+}
+
+@keyframes loadingImg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.none {
+    animation: none;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 1.5s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
+
+.resultdata p {
+    font-size: 18px;
+    line-height: 1.8;
+}
